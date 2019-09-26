@@ -3,6 +3,7 @@
 #'@ converging_or_not: the difference between the final simulated median and population median (multipled by 100)
 #'@ deviation: we use the threshold to tell if final simulations converge to the selected population metric
 #'@ n_sim: number of simulations
+#* note since this simulation run without replacement. It is wrong to call it bootstrapping...
 
 montecarlo_simulation <- function(pollutant_col_id, distf, deviation = 0.25, n_sim = 100) {
   # every point in the final plot is the median of simulated samples
